@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form action="" method="post">
+<fieldset>
+    <legend> Personal Information</legend>
+    <div>
+    <label for="surname"> Surname:</label>
+    <input name="surname" type="text" minlength="1"/> 
+    </div>
+    <div>
+    <label for="name"> Name:</label>
+    <input name="name" type="text" value="Yulia"/>
+    </div>
+    <div>
+        <label for="old"> How old are you?</label>
+        <input name="old" type="number" max="20"/>
+    </div>
+    <div>
+        <label for="birth">Full date of birth</label>
+        <input name="birth" type="date"/>
+    </div>
+    <div>
+        <label for="accept"> I accept the terms of the agreement</label>
+        <input name="accept" type="checkbox"/>
+    </div>
+</fieldset>
+<fieldset>
+    <legend> Registration</legend>
+    <div>
+        <label for="mail"> E-mail</label>
+        <input name="mail" type="email" placeholder="Enter your e-mail" required/>
+    </div>
+    <div>
+        <label for="pass"> Password</label>
+        <input name="pass" type="password"/>
+    </div>
+    </fieldset>
+<fieldset>
+    <legend> An interesting fact about you!</legend>
+    <div>
+        <p>Do you love cats
+            <label for="cats">Yes</label>
+            <input name="cats" type="radio" value="yes"/>
+            <label for="cats">No</label>
+            <input name="cats" type="radio" value="no"/>
+        </p>
+    </div>
+    <div>
+        <label for="color"> What is your favorite color?</label>
+        <input name="color" type="color" />
+    </div>
+    <div>
+        <label for="sleep"> What time do you go to bed?</label>
+        <input name="sleep" type="time"/>
+    </div>
+    <div>
+        <label for="cars"> What your favorit brand of car?</label>
+        <select name="cars" id="cars">
+            <option>BMW</option>
+            <option selected >Toyota</option>
+            <option>Kia</option>
+        </select>
+    </div>
+    <div>
+        <label for="work" > How do you rate our work?</label>
+        <input name="work" id="work" type="range"/>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Your comments:</legend>
+    <div>
+        <textarea placeholder="Comments" name="comments" id="comments" ></textarea>
+    </div>
+</fieldset>
+<input name="submit" type="submit" value="Submit" />
+
+    </form>
+</body>
+</html>
